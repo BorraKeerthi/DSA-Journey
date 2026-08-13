@@ -12,6 +12,7 @@ int main(){
     for(int i=0;i<n;i++){
         mp[arr[i]]++;
     }
+    
     int times;
     cout<<"Enter the no of times you wanted to find:";
     cin>>times;
@@ -20,5 +21,8 @@ int main(){
         cout<<"Enter the number to find:";
         cin>>number;
         cout<<mp[number]<<endl;
+    }
+    for(auto it:mp){
+        cout<<it.first<<"->"<<it.second<<endl;
     }
 }
