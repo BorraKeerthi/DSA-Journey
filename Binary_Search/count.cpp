@@ -1,4 +1,4 @@
-vector<int> count(vector<int>& nums, int target) {
+int count(vector<int>& nums, int target) {
     int first=-1;
     int last=-1;
     int cnt=0;
@@ -8,5 +8,5 @@ vector<int> count(vector<int>& nums, int target) {
     }
     last=upper_bound(nums.begin(),nums.end(),target)-nums.begin()-1;
     int cnt=last-first+1;
-    return {first,last};
+    return cnt;
 }
